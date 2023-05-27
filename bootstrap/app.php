@@ -24,6 +24,7 @@ $app = new Laravel\Lumen\Application(
 );
 
 $app->withFacades();
+
 $app->withEloquent();
 
 /*
@@ -59,6 +60,8 @@ $app->singleton(
 */
 
 $app->configure('app');
+
+$app->configure('services');
 
 /*
 |--------------------------------------------------------------------------
